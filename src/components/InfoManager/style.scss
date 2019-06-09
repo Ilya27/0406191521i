@@ -1,0 +1,95 @@
+.info_manager{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Arial;
+    min-height: 120px;
+    margin: 16px 20px 4px 19px;
+
+    & .image_container{
+        background-color: rgb(253, 214, 57);
+        width: 120px; 
+        height: 120px;
+        border-radius: 50%;
+        background: url(../../assets/image/manager.jpg) no-repeat -70px -25px; 
+        background-size: auto 215px; 
+    }
+
+    & .name_container{
+        margin: 0;
+        font-size: 12px;
+        margin-top: 9px;
+        margin-left: 15px;
+        & h2, & p{
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
+
+        & h2{
+            font-size: 16px;
+            margin-top: 25px;
+        }
+
+        & p{
+          color:#808080;
+        }
+    }
+
+    & h3{
+        font-size: 14px;
+        padding: 15px 15px 15px 15px;
+        border-radius: 4px;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    & .services_container{
+        border-radius: 4px;
+        background-color: #fffbc8;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.05);
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgba(0, 0, 0, 0.19);
+        margin-top: 5px;
+        
+    }
+
+
+    @media (min-width:425px) {
+        display: block;
+        & .image_container{
+            position: absolute;
+            width: 130px;
+            height: 130px;
+            background-size: auto 225px;
+        }
+
+        & .name_container{
+            margin-left: 135px;
+            & h2{
+                margin-top: 0;
+                margin-bottom: 10px;
+            }
+            & p{
+                margin-bottom: 5px;
+            }
+        }
+
+        & h3{
+            padding: 15px 5px 15px 48px;
+            
+        }
+
+        & .services_container{
+            margin-left:88px;
+        }
+
+    }
+
+    @media (min-width:487px) {
+        & .image_container{
+            width: 120px;
+            height: 120px;
+            background-size: auto 215px;
+        }
+    }
+}

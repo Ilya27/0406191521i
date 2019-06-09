@@ -1,0 +1,54 @@
+.rating_container{
+    line-height: 15px;
+    font-family: Arial;
+    margin: 0 20px 0 20px;
+    & .rating{
+        position: relative;
+        border-top: 1px solid #cccccc;
+        border-bottom: 1px solid #cccccc;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    & .rating::before{
+        content: '';
+        border-left: 1px solid #b2b2b2;
+        opacity: 0.4;
+        position: absolute;
+        height:71.5%;
+        z-index: 1;
+    }
+
+   .manualBooking .mark__strip{
+       margin-top: 0;
+    }
+   .manualBooking  .mark__number{
+        padding-top: 3px;
+    }
+    & p{
+        margin: 0;
+        margin-bottom: 8px;
+        text-align: end;
+        margin-right: 32px;
+        font-size: 13px;
+    }
+
+    & .max_mark{
+        float: right;
+        margin-right: 44px;
+    }
+    
+    h2{
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+    
+    .manualBooking .mark__name {
+        top:4px;
+    }
+
+    @media (min-width:425px) {
+        margin-left: 31%;
+    }
+}

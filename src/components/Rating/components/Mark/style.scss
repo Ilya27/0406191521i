@@ -1,0 +1,28 @@
+
+.mark{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    & .mark__strip{
+        border-top-right-radius: 3px;
+        border-bottom-right-radius:3px;
+        margin-top: 2px;
+    }
+    & .mark__number{
+        display: block;
+        float:  right;
+        margin: 0;
+        padding-top: 5px;
+        margin-right: 43px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    & .mark__name{
+        position: absolute;
+        margin: 0;
+        top:7px;
+        left: 7px;
+    }
+}
+  
